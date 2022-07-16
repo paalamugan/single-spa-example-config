@@ -23,18 +23,18 @@ yarn add -D @single-spa-example/webpack
 
 ```js
 const {
-  singleSpaWebpackConfig,
+  singleSpaReactWebpackConfig,
 } = require("@single-spa-example/webpack");
 
-module.exports = singleSpaWebpackConfig(<your_organization_name>, <your_project_name>, <customize_webpack_config>);
+module.exports = singleSpaReactWebpackConfig(<your_organization_name>, <your_project_name>, <customize_webpack_config>);
 ```
 
 - Added Below line in your project `babel.config.js` like,
 
 ```js
-const { singleSpaBabelConfig } = require("@single-spa-example/webpack");
+const { singleSpaReactBabelConfig } = require("@single-spa-example/webpack");
 
-module.exports = singleSpaBabelConfig(<customize_babel_config>);
+module.exports = singleSpaReactBabelConfig(<customize_babel_config>);
 ```
 
 - Added Below line in your project `tailwind.config.js` like,
