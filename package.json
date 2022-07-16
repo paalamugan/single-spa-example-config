@@ -1,6 +1,6 @@
 {
   "name": "@single-spa-example/common-config",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Predefined Some Common webpack and other configuration for single-spa with react and typescript",
   "main": "index.js",
   "keywords": [
