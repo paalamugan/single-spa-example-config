@@ -1,6 +1,6 @@
 # Single spa example common configuration
 
-Predefined Some Common webpack and other configuration for single-spa.
+Predefined Some Common webpack and other configuration for single-spa with react and typescript.
 
 ## Getting started
 
@@ -16,7 +16,7 @@ yarn - 1.22.19
 - Install as a node module package like
 
 ```sh
-yarn add -D @single-spa-example/co-config
+yarn add -D @single-spa-example/common-config
 ```
 
 - Added Below line in your project `webpack.config.js` like,
@@ -24,7 +24,7 @@ yarn add -D @single-spa-example/co-config
 ```js
 const {
   singleSpaReactWebpackConfig,
-} = require("@single-spa-example/webpack-config");
+} = require("@single-spa-example/common-config");
 
 module.exports = singleSpaReactWebpackConfig(<your_organization_name>, <your_project_name>, <customize_webpack_config>);
 ```
@@ -32,7 +32,7 @@ module.exports = singleSpaReactWebpackConfig(<your_organization_name>, <your_pro
 - Added Below line in your project `babel.config.js` like,
 
 ```js
-const { singleSpaReactBabelConfig } = require("@single-spa-example/webpack-config");
+const { singleSpaReactBabelConfig } = require("@single-spa-example/common-config");
 
 module.exports = singleSpaReactBabelConfig(<customize_babel_config>);
 ```
@@ -40,7 +40,7 @@ module.exports = singleSpaReactBabelConfig(<customize_babel_config>);
 - Added Below line in your project `tailwind.config.js` like,
 
 ```js
-const { singleSpaTailwindConfig } = require("@single-spa-example/webpack-config");
+const { singleSpaTailwindConfig } = require("@single-spa-example/common-config");
 
 module.exports = singleSpaTailwindConfig(<customize_tailwind_config>);
 ```
@@ -48,7 +48,7 @@ module.exports = singleSpaTailwindConfig(<customize_tailwind_config>);
 - Added Below line in your project `postcss.config.js` like,
 
 ```js
-const { singleSpaPostcssConfig } = require("@single-spa-example/webpack-config");
+const { singleSpaPostcssConfig } = require("@single-spa-example/common-config");
 
 module.exports = singleSpaPostcssConfig(<customize_postcss_config>);
 ```
@@ -56,7 +56,7 @@ module.exports = singleSpaPostcssConfig(<customize_postcss_config>);
 - Added Below line in your project `commitlint.config.js` like,
 
 ```js
-const { singleSpaCommitlintConfig } = require("@single-spa-example/webpack-config");
+const { singleSpaCommitlintConfig } = require("@single-spa-example/common-config");
 
 module.exports = singleSpaCommitlintConfig(<customize_commitlint_config>);
 ```
