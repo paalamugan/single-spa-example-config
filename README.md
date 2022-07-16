@@ -1,4 +1,4 @@
-# Single spa example react webpack configuration
+# Single spa example webpack configuration
 
 Predefined Some Common webpack configuration for single-spa with react and typescript
 
@@ -16,7 +16,7 @@ yarn - 1.22.19
 - Install as a node module package like
 
 ```sh
-yarn add -D @single-spa-example/react-webpack
+yarn add -D @single-spa-example/webpack
 ```
 
 - Added Below line in your project `webpack.config.js` like,
@@ -24,7 +24,7 @@ yarn add -D @single-spa-example/react-webpack
 ```js
 const {
   singleSpaWebpackConfig,
-} = require("@single-spa-example/react-webpack");
+} = require("@single-spa-example/webpack");
 
 module.exports = singleSpaWebpackConfig(<your_organization_name>, <your_project_name>, <customize_webpack_config>);
 ```
@@ -32,7 +32,7 @@ module.exports = singleSpaWebpackConfig(<your_organization_name>, <your_project_
 - Added Below line in your project `babel.config.js` like,
 
 ```js
-const { singleSpaBabelConfig } = require("@single-spa-example/react-webpack");
+const { singleSpaBabelConfig } = require("@single-spa-example/webpack");
 
 module.exports = singleSpaBabelConfig(<customize_babel_config>);
 ```
@@ -40,7 +40,7 @@ module.exports = singleSpaBabelConfig(<customize_babel_config>);
 - Added Below line in your project `tailwind.config.js` like,
 
 ```js
-const { singleSpaTailwindConfig } = require("@single-spa-example/react-webpack");
+const { singleSpaTailwindConfig } = require("@single-spa-example/webpack");
 
 module.exports = singleSpaTailwindConfig(<customize_tailwind_config>);
 ```
@@ -48,7 +48,7 @@ module.exports = singleSpaTailwindConfig(<customize_tailwind_config>);
 - Added Below line in your project `postcss.config.js` like,
 
 ```js
-const { singleSpaPostcssConfig } = require("@single-spa-example/react-webpack");
+const { singleSpaPostcssConfig } = require("@single-spa-example/webpack");
 
 module.exports = singleSpaPostcssConfig(<customize_postcss_config>);
 ```
