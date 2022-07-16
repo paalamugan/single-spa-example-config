@@ -1,10 +1,3 @@
-module.exports = {
-  extends: ["@commitlint/config-conventional"],
-  rules: {
-    "type-empty": [2, "never"],
-    "type-case": [2, "always", "lower-case"],
-    "subject-empty": [2, "never"],
-    "body-empty": [2, "always"],
-    "footer-empty": [2, "always"],
-  },
-};
+const singleSpaCommitlintConfig = require("./lib/commitlint.config");
+
+module.exports = singleSpaCommitlintConfig();
