@@ -1,3 +1,3 @@
-const singleSpaCommitlintConfig = require("./lib/commitlint.config");
+const commitlintConfig = require("./config/commitlint.config");
 
-module.exports = singleSpaCommitlintConfig();
+module.exports = commitlintConfig;

@@ -1,8 +1,9 @@
 {
-  "name": "@single-spa-example/common-config",
+  "name": "@single-spa-example/config",
   "version": "1.0.0",
   "description": "Predefined Some Common webpack and other configuration for single-spa with react and typescript",
   "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "webpack",
     "react",
@@ -61,12 +62,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paalamugan/single-spa-example-common-config.git"
+    "url": "https://github.com/paalamugan/single-spa-example-config.git"
   },
   "bugs": {
-    "url": "https://github.com/paalamugan/single-spa-example-common-config/issues"
+    "url": "https://github.com/paalamugan/single-spa-example-config/issues"
   },
-  "homepage": "https://github.com/paalamugan/single-spa-example-common-config#readme",
+  "homepage": "https://github.com/paalamugan/single-spa-example-config#readme",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
